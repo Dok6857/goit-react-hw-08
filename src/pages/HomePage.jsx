@@ -1,3 +1,5 @@
+import { RiContactsBook2Fill } from "react-icons/ri";
+
 const styles = {
     container: {
       minHeight: 'calc(100vh - 50px)',
@@ -16,7 +18,7 @@ const styles = {
     return (
       <div style={styles.container}>
         <h1 style={styles.title}>
-          Welcome to your personal Phonebook 😁
+          Welcome to your personal Phonebook <RiContactsBook2Fill />
         </h1>
       </div>
     );

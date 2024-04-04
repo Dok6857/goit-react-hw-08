@@ -7,6 +7,7 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    gap: 15
   },
   title: {
     fontWeight: 500,

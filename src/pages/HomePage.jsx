@@ -24,7 +24,7 @@ export default function Home() {
       <h1 style={styles.title}>
         Welcome to your personal Phonebook <RiContactsBook2Fill />
       </h1>
-      <p>{`Follow the Contacts button to create your personal Phonebook, where you can add new contacts and delete those who you don't want to see anymore.`}</p>
+      <p>{`Register or Login to create your personal Phonebook, where you can add new contacts and delete those who you don't want to see anymore.`}</p>
     </div>
   );
 }

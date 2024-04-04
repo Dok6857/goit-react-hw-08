@@ -1,4 +1,4 @@
-// contactsOps.js
+// contacts/operations.js
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -18,9 +18,9 @@ export const fetchContacts = createAsyncThunk(
 
 export const addContact = createAsyncThunk(
   'contacts/addContacts',
-  async (_, thunkAPI) => {
+  async (newContact, thunkAPI) => {
     try {
-      const response = await axios.post('/contacts');
+      const response = await axios.post('/contacts', newContact);
 
       return response.data;
     } catch (error) {

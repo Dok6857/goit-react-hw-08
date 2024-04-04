@@ -1,4 +1,4 @@
-// contactsSlice.js
+// contacts/slice.js
 import { createSelector, createSlice } from '@reduxjs/toolkit';
 import { addContact, deleteContact, fetchContacts } from './operations';
 import { selectNameFilter } from '../filters/selectors';

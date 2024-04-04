@@ -1,10 +1,22 @@
 .wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .username {
-    font-weight: 700;
-  }
-  
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wrapper > button {
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+.wrapper > button:hover,
+.wrapper > button:focus {
+  background-color: rgba(255, 0, 0, 0.644);
+}
+
+.username {
+  font-weight: 700;
+}

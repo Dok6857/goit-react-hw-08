@@ -6,6 +6,14 @@ import { fetchContacts } from '../redux/contacts/operations';
 import { useDispatch } from 'react-redux';
 import { Helmet } from 'react-helmet';
 
+const styles = {
+  CPcontainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 15,
+  }
+}
+
 function ContactsPage() {
   const dispatch = useDispatch();
 
@@ -14,7 +22,7 @@ function ContactsPage() {
   }, [dispatch]);
 
   return (
-    <div className="container">
+    <div style={styles.CPcontainer}>
       <Helmet>
         <title>Contacts</title>
       </Helmet>

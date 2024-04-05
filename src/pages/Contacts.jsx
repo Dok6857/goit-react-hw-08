@@ -14,7 +14,7 @@ const styles = {
   }
 }
 
-function ContactsPage() {
+function Contacts() {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -34,4 +34,4 @@ function ContactsPage() {
   );
 }
 
-export default ContactsPage;
+export default Contacts;

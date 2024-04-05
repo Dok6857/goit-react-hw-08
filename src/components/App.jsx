@@ -9,10 +9,10 @@ import { PrivateRoute } from './PrivateRoute';
 import { Layout } from './Layout';
 // import './App.css';
 
-const HomePage = lazy(() => import('../pages/HomePage'));
-const RegisterPage = lazy(() => import('../pages/RegisterPage'));
-const LoginPage = lazy(() => import('../pages/LoginPage'));
-const ContactsPage = lazy(() => import('../pages/ContactsPage'));
+const HomePage = lazy(() => import('../pages/Home'));
+const RegistrationPage = lazy(() => import('../pages/Registration'));
+const LoginPage = lazy(() => import('../pages/Login'));
+const ContactsPage = lazy(() => import('../pages/Contacts'));
 
 export default function App() {
   const isRefreshing = useSelector(selectIsRefreshing);
@@ -35,7 +35,7 @@ export default function App() {
                 path="/register"
                 element={
                   <RestrictedRoute
-                    component={<RegisterPage />}
+                    component={<RegistrationPage />}
                     redirectTo="/contacts"
                   />
                 }
